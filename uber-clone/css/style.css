@@ -1,0 +1,49 @@
+/* Custom styles for Gabzy Tool */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: black;
+        padding: 20px;
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
