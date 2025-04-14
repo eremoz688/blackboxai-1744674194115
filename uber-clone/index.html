@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabzy Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://www.uber.com/favicon.ico">
+</head>
+<body class="font-sans">
+    <header class="bg-black text-white">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold">Gabzy Tool</div>
+            <div class="menu-toggle md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </div>
+            <nav>
+                <ul class="hidden md:flex space-x-4">
+                    <li><a href="#" class="hover:underline">Ride</a></li>
+                    <li><a href="#" class="hover:underline">Drive</a></li>
+                    <li><a href="#" class="hover:underline">Deliver</a></li>
+                    <li><a href="#" class="hover:underline">Login</a></li>
+                    <li><a href="#" class="hover:underline">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero bg-cover bg-center h-screen" style="background-image: url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');">
+            <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+                <div class="text-center">
+                    <h1 class="text-5xl text-white mb-4">Welcome to Gabzy Tool</h1>
+                    <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg">Get Started</button>
+                </div>
+            </div>
+        </section>
+        <section class="services py-20">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="service-card p-4 border rounded">
+                        <h3 class="text-xl font-semibold">UberX</h3>
+                        <p>Affordable rides for everyone.</p>
+                    </div>
+                    <div class="service-card p-4 border rounded">
+                        <h3 class="text-xl font-semibold">Uber Black</h3>
+                        <p>Luxury rides for special occasions.</p>
+                    </div>
+                    <div class="service-card p-4 border rounded">
+                        <h3 class="text-xl font-semibold">Uber Eats</h3>
+                        <p>Food delivery from your favorite restaurants.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-black text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Gabzy Tool. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
